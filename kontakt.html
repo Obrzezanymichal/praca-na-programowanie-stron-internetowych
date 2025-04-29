@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - Moje Zainteresowania</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/walidacja.js"></script>
+</head>
+<body>
+  <!-- Nagłówek z logo i trybem jasny/ciemny -->
+  <header>
+    <img src="img/logo.svg" alt="Logo strony" id="logo">
+    <h1>Kontakt</h1>
+    <button id="theme-toggle">Tryb jasny/ciemny</button>
+  </header>
+
+  <!-- Nawigacja -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Strona Główna</a></li>
+      <li><a href="kontakt.html" class="active">Kontakt</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="temat1.html">Temat 1</a></li>
+      <li><a href="temat2.html">Temat 2</a></li>
+    </ul>
+  </nav>
+
+  <!-- Główna treść strony kontaktowej -->
+  <main>
+    <section>
+      <h2>Formularz kontaktowy</h2>
+      <!-- Formularz kontaktowy z walidacją -->
+      <form id="contact-form">
+        <!-- Pole Imię -->
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Pole Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Pole Wiadomość -->
+        <label for="message">Wiadomość:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <!-- Przycisk Wyślij -->
+        <button type="submit">Wyślij</button>
+
+        <!-- Miejsce na komunikaty walidacyjne -->
+        <div id="form-message"></div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Stopka -->
+  <footer>
+    <p>&copy; 2025 Moje Zainteresowania</p>
+  </footer>
+</body>
+</html>
